@@ -13,7 +13,10 @@ header{
     margin: 0 auto;
     max-width: 1605px;
     padding: 4px 15px 2px 15px;
-    
+    border: solid 1px lightgrey;
+    position: sticky;
+    top:0;
+    background-color: white;
 }
 .box1, .box2, .box3{
     display:flex;
@@ -75,13 +78,163 @@ button{
 .gridContainer{
     display:grid;
     grid-template-columns: 1fr 600px 1fr;
-}
-#featuredImg{
-    width: 945px;
-    display:block;
+    grid-template-rows: 170px 620px 100px auto 780px auto;
+    
 }
 .mainH1{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    display:block;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    max-width: 383px;
+    padding-top:50px;
+}
+.mainH1 h1{
+    font-style: italic;
+}
+.image{
+   grid-row: 2 3; 
+   grid-column: 2 / 3;
+   position: relative;
+    left: -150px;
+    width: 750px;
+    z-index: -1;
+   
+}
+.image img{
+    width: 925px;
+    
+}
+#caption{
+    font-size: 14px;
+    color:#333;
+    opacity: 0.8;
+}
+#credit{
+    font-size: 12px;
+    color:grey;
+}
+.author{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+   
+}
+.author a{
+    font-weight: bold;
+   
+}
+.author p{
+    font-size: 13px;
+    opacity: 0.9;
+    display: inline-block;
+    float: left;
+    
+}
+.mainText{
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+.mainText p{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+   
+}
+.icons{
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    padding-left:0px;
+   
+    margin:0;
+    
+}
+li{
+    display: inline-block;
+    list-style: none !important;
+   
+}
+ul{
+    list-style: none !important;
+    display: inline-block;
+    text-align:center;
+    position: relative;
+    left: 300px;
+}
+.buttons{
+        background: transparent;
+        display: inline-block;
+        background-color: #eee;
+        border: 1px #eee solid;
+        border-radius: 100%;
+        padding: 0px;
+        width: 27px;
+        height: 27px;
+        margin-left: 2px;   
+}
+.last2{
+    display: inline-block;
+    max-width: 20px;
+}    
+.last2 > li >img{
+    width: 40px;
+    position:relative;
+    top:5px;
+    left:-2px;
+ 
+}
+.last2 > li >svg{
+    position: relative;
+    width:15px;
+    margin-left:4px;
+    
+}
+.buttons >li >svg{
+    padding:5px;
+    width:15px;
+    height:15px;
+    
+}
+.inflation{
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+    position:relative;
+    left:-170px;
+    width:960px;
+    z-index:-2;
+    
+}
+.inflation > img{
+    width: 945px;
+}
+.inflationText{
+    width: 190px;
+    display: inline-block;
+    position: relative;
+    top:-450px;
+    margin: 0px 46px 115px 0px;
+}
+.inflationH{
+    font-size:12px;
+    font-weight:bold;
+    margin-right:6px;
+}
+.inflationP{
+    font-size:13px;
+    font-weight: 300;
+    line-height: 17px;
+}
+hr{
+    width:80px;
+    text-align:left;
+    margin-left: 0;
+}
+.inflationCredit{
+    position: relative;
+    top: -550px;
+}
+.mainText2{
+    grid-column: 2 / 3;
+    grid-row: 6 / 7;
+}
+.mainText2 p{
+    font-size: 1.25rem;
+    line-height: 1.875rem;
+   
 }
