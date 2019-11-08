@@ -17,6 +17,7 @@ header{
     position: sticky;
     top:0;
     background-color: white;
+    z-index:1;
 }
 .box1, .box2, .box3{
     display:flex;
@@ -233,8 +234,167 @@ hr{
     grid-column: 2 / 3;
     grid-row: 6 / 7;
 }
-.mainText2 p{
+.mainText2 > p{
     font-size: 1.25rem;
     line-height: 1.875rem;
    
+}
+.endCap{
+    z-index: -1;
+}
+.endCap a{
+    font-size: 0.75rem;
+}
+.endButton{
+    background-color: rgb(86, 123, 149);
+    color: white;
+    display: block;
+    font-family: nyt-franklin, helvetica, arial, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    line-height: 1.5rem;
+    margin-left: 0;
+    margin-right: auto;
+    text-transform: uppercase;
+    width: 300px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(50, 104, 145);
+    border-image: initial;
+    border-radius: 3px;
+    padding: 5px 0px;
+    transition: background-color 0.6s ease 0s;
+}
+#endSocials{
+    position:relative;
+    left:75px;
+    top:5px;
+}
+#endSocials .buttons{
+    margin-left:10px;
+}
+.endContainer{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-column-gap: 5.3%;
+    padding-left: 50px;
+    
+}
+.hr1{
+    grid-column: 1 / 3;
+    width:100%;
+    height: 1px;
+    background-color: black;
+
+}
+.hr2{
+    grid-column: 3 / 4;
+    width:100%;
+    height: 1px;
+    background-color: black;
+}
+.endContainer img{
+    grid-column: 1 / 2;
+    
+    width: 100%;
+}
+.mostPopular h3{
+    font-size: 1.0rem;
+}
+.mostPopular hr{
+    width:100%;
+    margin: 20px 0px;
+    opacity: 0.5;
+}
+.mostPopular a{
+    font-size:1.05rem;
+    font-weight:400;
+    text-decoration: none;
+    
+}
+.mostPopular{
+    
+}
+.endImgContainer{
+    grid-column: 1 / 3;
+}
+.endImgContainer2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 20px;
+    margin-top: 20px;
+}
+.editorsPicks hr{
+    width:100%;
+    margin-top:20px;
+    height: 1px;
+    background-color: black;
+    
+}
+
+.footerDiv{
+    padding: 0px 50px;
+}
+
+.footerLogo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLogo svg{
+    width: 200px;
+    
+}
+
+.footerLogo a{
+   font-size: 10px;
+}
+
+.footerNav ul li{
+    display: block;
+    text-align: left;
+    list-style: none;
+    border-top: solid 1px lightgrey;
+    padding: 12px 0px;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+}
+
+.footerNav ul{
+    left: 0px;
+    list-style: none;
+    padding-inline-start: 0;
+    display:block;
+}
+
+.copyright{
+    display: block;
+    text-align: center;
+}
+
+.copyright a{
+    text-decoration: none;
+    font-size: 10px;
+    opacity: 0.6;
+}
+.copyright a:hover{
+    text-decoration: underline;
+    
+}
+
+.copyright ul{
+    display:block;
+
+    text-align:center;
+    left:0px;
+}
+
+.copyright li{
+   margin: 0px 5px;
 }
